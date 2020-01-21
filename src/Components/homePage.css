@@ -1,0 +1,73 @@
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/mainPhotoMobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.20);
+  z-index: 0;
+}
+
+.home__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25%;
+  z-index: 1;
+}
+
+.home__box-title,
+.home__box-paragraph,
+.home__buttonsBox-searchBtn,
+.home__buttonsBox-allRecipesBtn {
+  z-index: 1;
+}
+
+.home__buttonsBox {
+  margin-top: 10%;
+}
+
+.home__buttonsBox-searchBtn,
+.home__buttonsBox-allRecipesBtn {
+  width: 120px;
+  height: 35px;
+  margin: 5px;
+  font-size: 15px;
+  color: rgba(228, 222, 102, 1);
+  border: 1.5px solid rgba(228, 222, 102, 1);
+  border-radius: 20px;
+  background: none;
+  font-weight: 900;
+  text-shadow: 3px 2px rgba(0, 0, 0, 1);
+}
+
+.home__box-title,
+.home__box-paragraph {
+  font-weight: 800;
+  color: rgba(228, 222, 102, 1);
+  text-shadow: 3px 2px rgba(0, 0, 0, 1);
+}
+
+.home__box-title {
+  font-size: 30px;
+}
+
+@media (min-width:300px) {
+  .home__box-title {
+    font-size: 25px;
+  }
+
+  .home__buttonsBox-searchBtn,
+  .home__buttonsBox-allRecipesBtn {
+    width: 105px;
+    height: 35px;
+  }
+}
