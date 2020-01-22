@@ -1,20 +1,22 @@
 import React from "react";
-import style from './recipe.module.css'
+import "./recipe.css";
 
 const Recipe = ({ title, calories, image, ingredients }) => {
   const cal = Math.floor(calories);
   const calDivision = cal / 8;
   return (
-    <div className={style.recipe}>
-      <h1 className={style.recipeTitle}>{title}</h1>
-      <p>{calDivision} kcal</p>
-      <div className={style.recipeBox}>
-        <ul className={style.recipeList}>
+    <div className="recipe">
+      <h1 className="recipe-title">{title}</h1>
+      <img className="recipe__details-img" src={image} alt="" />
+      <p className="recipe-paragraph">{calDivision} kcal</p>
+      <div className="recipe__details">
+        <ul className="recipe__details__list" key={ingredients.title}>
           {ingredients.map(ingredient => (
-            <li className={style.recipeItems}>{ingredient.text}</li>
+            <li className="recipe__details__list-item" key={ingredient}>
+              {ingredient.text}
+            </li>
           ))}
         </ul>
-        <img className={style.image} src={image} alt="" />
       </div>
     </div>
   );

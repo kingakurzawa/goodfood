@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Recipe from "./Recipe";
+import "./searchPage.css";
 
 const Searcher = () => {
   const APP_ID = "42af88ff";
@@ -30,29 +31,30 @@ const Searcher = () => {
   };
   return (
     <>
-      <Link to="/">Home</Link>
-      <div className="App">
-        <h1>Let's find a delicious recipe!</h1>
-        <form className="search-form" onSubmit={getSearch}>
-          <div></div>
+      <Link to="/" className="backToHomePage-btn">
+        <i className="fas fa-arrow-left"></i>
+      </Link>
+      <div className="search">
+        <h1 className="search-title">Let's find a delicious recipe!</h1>
+        <form className="search__form" onSubmit={getSearch}>
           <input
             type="text"
-            placeholder="what do you have in your fridge today?"
-            className="search-bar"
+            placeholder="enter one ingredient"
+            className="search__form-bar"
             value={search}
             onChange={updateSearch}
           />
-          <button type="submit" className="search-button">
+          <button type="submit" className="search__form-btn">
             <i className="fas fa-utensils"></i>
             Search
           </button>
         </form>
-        <div className="recipes">
+        <div className="search__recipes">
           {recipes.map(recipe => (
             <Recipe
               key={recipe.recipe.label}
-              title={recipe.recipe.label}
               calories={recipe.recipe.calories}
+              title={recipe.recipe.label}
               image={recipe.recipe.image}
               ingredients={recipe.recipe.ingredients}
             />

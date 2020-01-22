@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AllRecipes = () => {
   return (
-    <section className="home">
+    <section className="">
         <Link to="/">Home</Link>
     
     </section>
