@@ -1,9 +1,10 @@
 .home {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
-  background-image: url(../images/mainPhotoMobile.jpg);
+  background-image: url('../images/mainPhotoMobile.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -70,4 +71,13 @@
     width: 105px;
     height: 35px;
   }
+}
+
+.home__footer {
+  background: #000000;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e4de66;
 }

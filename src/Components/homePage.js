@@ -20,6 +20,7 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
+      <footer className="home__footer">created with passion</footer>
     </section>
   );
 };

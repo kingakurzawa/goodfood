@@ -21,6 +21,11 @@
     text-align: center;
 }
 
-.recipe__details-img {
+.recipe-img {
     width: 100%;
 }
+
+.recipe__details {
+    display: none;
+}
+
