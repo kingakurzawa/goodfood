@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .home {
   position: relative;
   display: flex;
@@ -11,10 +13,10 @@
 
 .home-shadow {
   position: absolute;
+  z-index: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.20);
-  z-index: 0;
+  background: rgba(0, 0, 0, .2);
 }
 
 .home__box {
@@ -22,13 +24,13 @@
   flex-direction: column;
   align-items: center;
   padding-top: 15%;
-  z-index: 1;
 }
 
 .home__box-title,
 .home__box-paragraph,
 .home__buttonsBox-searchBtn,
-.home__buttonsBox-allRecipesBtn {
+.home__buttonsBox-allRecipesBtn,
+.home__box {
   z-index: 1;
 }
 
@@ -42,19 +44,19 @@
   height: 35px;
   margin: 5px;
   font-size: 15px;
-  color: rgba(228, 222, 102, 1);
-  border: 1.5px solid rgba(228, 222, 102, 1);
+  font-weight: 900;
+  text-shadow: 3px 2px $textShadow;
+  color: $mainFontColor;
+  border: 1.5px solid $mainFontColor;
   border-radius: 20px;
   background: none;
-  font-weight: 900;
-  text-shadow: 3px 2px rgba(0, 0, 0, 1);
 }
 
 .home__box-title,
 .home__box-paragraph {
   font-weight: 800;
-  color: rgba(228, 222, 102, 1);
-  text-shadow: 3px 2px rgba(0, 0, 0, 1);
+  text-shadow: 3px 2px $textShadow;
+  color: $mainFontColor;
 }
 
 .home__box-title {
@@ -74,10 +76,10 @@
 }
 
 .home__footer {
-  background: #000000;
-    height: 30px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    color: #e4de66;
+  @include displayRules(center);
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $mainFontColor;
+  background: rgba(0, 0, 0, 1);
 }

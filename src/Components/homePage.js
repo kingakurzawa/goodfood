@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./homePage.css";
+import "../scss/homePage.scss";
 
 const HomePage = () => {
   return (
@@ -20,7 +20,9 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      <footer className="home__footer">created with passion</footer>
+      <footer className="home__footer">
+        created with passion <i class="fas fa-utensils"></i>
+      </footer>
     </section>
   );
 };

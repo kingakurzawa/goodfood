@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Recipe from "./Recipe";
-import "./searchPage.css";
+import "../scss/searchPage.scss";
 
 const Searcher = () => {
   const APP_ID = "42af88ff";
@@ -31,9 +31,12 @@ const Searcher = () => {
   };
   return (
     <>
-      <Link to="/" className="backToHomePage-btn">
-        <i className="fas fa-arrow-left"></i>
-      </Link>
+      <div>
+        <Link to="/" className="backToHomePage-btn">
+          <i className="fas fa-arrow-left"></i>
+        </Link>
+        <button></button>
+      </div>
       <div className="search">
         <h1 className="search-title">Let's find a delicious recipe!</h1>
         <form className="search__form" onSubmit={getSearch}>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./recipe.css";
+import "../scss/recipe.scss";
 
 class Recipe extends React.Component {
   constructor(props) {
@@ -8,6 +8,8 @@ class Recipe extends React.Component {
       display: "none"
     };
   }
+
+  cal = Math.floor(this.props.calories) / 5;
 
   toggleBox() {
     this.setState({
@@ -26,7 +28,7 @@ class Recipe extends React.Component {
             alt={this.props.title}
           />
         </button>
-        <p className="recipe-paragraph">{this.props.calDivision} kcal</p>
+        <p className="recipe-paragraph">{this.cal} kcal</p>
         <div
           className="recipe__details"
           style={{ display: this.state.display }}
