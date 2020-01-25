@@ -1,14 +1,9 @@
 @import './variables.scss';
 
-.backToHomePage-btn {
-    padding: 10px;
-}
-
 .search {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5% 0;
 }
 
 .search-title {
@@ -24,32 +19,61 @@
 }
 
 .search__form-bar {
+    background: none;
+    border: 3px solid $recipeCardColor;
+    -webkit-box-shadow:
+        inset 0 0 8px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:
+        inset 0 0 8px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        inset 0 0 8px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(0, 0, 0, 0.1);
     margin-right: 5px;
     font-size: 20px;
+    cursor: text;
+}
+
+.search__form-bar:focus {
+    border: 5px solid rgb(76, 9, 139);
 }
 
 .search__form-btn {
-    height: 39px;
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(184, 122, 0, 1);
-    border: 1px solid rgba(184, 122, 0, 1);
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
-.search__form-btn,
 .search__form-bar {
-    background: none;
     border-radius: 5px;
 }
 
 .search__recipes {
-    margin-top: 5%;
-
+    width: 100%;
+    background-image: url('../images/mainPhotoMobile.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-@media (min-width:600px) {
+@media (min-width:400px) {
     .search__recipes {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:600px) {
+    .search__recipes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:900px) {
+    .search__recipes {
+        display: flex;
+        flex-wrap: wrap;
     }
 }

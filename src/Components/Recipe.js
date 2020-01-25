@@ -19,13 +19,13 @@ class Recipe extends React.Component {
   render() {
     return (
       <div className="recipe">
-        <h1 className="recipe-title">{this.props.title}</h1>
+        <img
+          className="recipe-img"
+          src={this.props.image}
+          alt={this.props.title}
+        />
         <button onClick={e => this.toggleBox(e)}>
-          <img
-            className="recipe-img"
-            src={this.props.image}
-            alt={this.props.title}
-          />
+          <h1 className="recipe-title">{this.props.title}</h1>
         </button>
         <p className="recipe-paragraph">{this.cal} kcal</p>
         <div
