@@ -1,5 +1,4 @@
 import React from "react";
-import "../scss/recipe.scss";
 
 class Recipe extends React.Component {
   constructor(props) {

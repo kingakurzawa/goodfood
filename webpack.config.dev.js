@@ -2,14 +2,30 @@ export default {
   module: {
     rules: [
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         use: [
-          "style-loader",
+          { loader: "style-loader" },
           {
             loader: "css-loader",
-            options: { sourceMap: 1 }
+            opcje: {
+              sourceMap: true,
+              moduły: true,
+              localIdentName: "[local] _ [hash: base64: 5]"
+            }
           },
-          "less-loader"
+          {
+            loader: "postcss-loader",
+            opcje: {
+              sourceMap: true,
+              config: {
+                path: "postcss.config.js"
+              }
+            }
+          },
+          {
+            loader: "sass-loader",
+            opcje: { sourceMap: true }
+          }
         ]
       }
     ]

@@ -1,17 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../scss/notFound.scss";
 const NotFoundPage = () => {
   return (
     <>
       <div className="error">
         <div className="error__box">
-          <Link to="/" className="backToHomePage-btn">
-            <i className="fas fa-arrow-left"></i>
-          </Link>
           <h1 className="error__box-type">Error 404 </h1>
         </div>
-
         <h2 className="errorText">Ooops! Something went wrong. </h2>
       </div>
     </>

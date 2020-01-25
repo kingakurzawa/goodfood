@@ -6,9 +6,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-image: url('../images/mainPhotoMobile.jpg');
+  background-image: url("../images/mainPhotoMobile.jpg");
   background-size: cover;
-  background-position: center;
+  background-position-x: 55%;
 }
 
 .home-shadow {
