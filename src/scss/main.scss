@@ -1,18 +1,8 @@
-@import './homePage.scss';
-@import './searchPage.scss';
-@import './recipe.scss';
-@import './notFound.scss';
-
-* {
-    margin: 0;
-    font-family: 'Kalam', cursive;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-
-}
-
-#root {
-    height: 100vh;
-}
-
+@import './generic/reset';
+@import './generic/basic';
+@import './variables/colors';
+@import './variables/mixins';
+@import './partials/homePage';
+@import './partials/searchPage';
+@import './partials/recipe';
+@import './partials/notFound';

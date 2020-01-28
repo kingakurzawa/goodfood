@@ -1,5 +1,3 @@
-@import './variables.scss';
-
 .search {
     display: flex;
     flex-direction: column;
@@ -25,13 +23,13 @@
         0 0 16px rgba(0, 0, 0, 0.1);
     margin-right: 5px;
     font-size: 20px;
-    background: none;
+    background: rgba(255, 255, 255, 0.726);
     cursor: text;
     width: 90%;
 }
 
-.search__form-bar:focus {
-    border: 5px solid rgb(76, 9, 139);
+.search__form-bar:focus, .search__form-btn:focus {
+    border: 3px solid rgb(76, 9, 139);
 }
 
 .search__form-btn {
@@ -45,10 +43,6 @@
 
 .search__recipes {
     width: 100%;
-    background-image: url('../images/mainPhotoDesktop.jpg');
-    background-attachment: fixed;
-    background-position: right;
-    background-size: cover;
 }
 
 @media (min-width:400px) {
@@ -74,5 +68,7 @@
 
 .toUp {
     width: 100%;
+    height: 40px;
+    font-size: 16px;
     background: #eec60c;
 }

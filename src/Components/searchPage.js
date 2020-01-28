@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import smoothscroll from "smoothscroll-polyfill";
 
 const Searcher = () => {
   const APP_ID = "42af88ff";
@@ -13,6 +14,11 @@ const Searcher = () => {
     getRecipes();
   }, [query]);
 
+  const scrollFunc = e => {
+    e.preventDefault();
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    smoothscroll.polyfill();
+  };
   const getRecipes = async () => {
     const response = await fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
@@ -70,8 +76,12 @@ const Searcher = () => {
           ))}
         </div>
       </div>
-      <button className="toUp" style={{ display: displayFormat }}>
-        <i className="fas fa-arrow-up"></i>
+      <button
+        className="toUp"
+        style={{ display: displayFormat }}
+        onClick={scrollFunc}
+      >
+        back to up
       </button>
     </>
   );
