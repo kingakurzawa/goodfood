@@ -4,12 +4,27 @@
 .home__box {
   height: 100%;
   width: 100%;
-  background-image: url('../images/mainPhotoMobile.jpg');
+  background-image: url('../images/mainPhotoDesktop.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
+
+.home__box__header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: rgba(238, 198, 10, .8);
+}
+
+.home__box__header-title {
+  height: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px;
+}
+
 
 
 

@@ -11,7 +11,13 @@
     background: $recipeCardColor;
 }
 
-@media (max-width:500px) {
+@media (min-width:360px) {
+    .recipe {
+        max-width: 70%;
+        margin: 35px auto;
+    }
+}
+@media (min-width:410px) {
     .recipe {
         max-width: 90%;
         margin: 35px auto;
