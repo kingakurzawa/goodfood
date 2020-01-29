@@ -1,7 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
+That's my first project created in React. It's in the process of creation but just now you can look at code.
 In the project directory, you can run:
 
 ### `npm start`
