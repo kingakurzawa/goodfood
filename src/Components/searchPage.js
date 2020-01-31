@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import ButtonInfo from './buttonInfo';
 import smoothscroll from "smoothscroll-polyfill";
 
 const Searcher = () => {
@@ -25,6 +26,11 @@ const Searcher = () => {
     );
     const data = await response.json();
     setRecipes(data.hits);
+    let object = data.hits;
+    for (let prop in object) {
+      console.log(object[prop[prop]])
+    }
+
     setTimeout(() => {
       if (data.hits.length >= 2) {
         return setDisplay("block");
@@ -64,6 +70,7 @@ const Searcher = () => {
             </svg>
           </button>
         </form>
+        <ButtonInfo/>
         <div className="search__recipes">
           {recipes.map(recipe => (
             <Recipe
@@ -77,7 +84,7 @@ const Searcher = () => {
         </div>
       </div>
       <button
-        className="toUp"
+        className="buttonToUp"
         style={{ display: displayFormat }}
         onClick={scrollFunc}
       >
