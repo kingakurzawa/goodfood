@@ -6,29 +6,22 @@
 }
 
 .search__form {
-    @include displayRules(unset);
+    @include displayRules(space-evenly);
     width: 90%;
 }
 
 .search__form-bar {
-    border: 3px solid $mainColor;
-    -webkit-box-shadow:
-        inset 0 0 8px rgba(0, 0, 0, 0.1),
-        0 0 16px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow:
-        inset 0 0 8px rgba(0, 0, 0, 0.1),
-        0 0 16px rgba(0, 0, 0, 0.1);
-    box-shadow:
-        inset 0 0 8px rgba(0, 0, 0, 0.1),
-        0 0 16px rgba(0, 0, 0, 0.1);
-    margin-right: 5px;
     font-size: 20px;
-    background: rgba(255, 255, 255, 0.726);
-    cursor: text;
+    padding-left: 5px;
     width: 90%;
+    border: none;
+    border-radius: 5px;
+    cursor: text;
+    background: rgba(255, 255, 255, 0.726);
 }
 
-.search__form-bar:focus, .search__form-btn:focus {
+.search__form-bar:focus,
+.search__form-btn:focus {
     border: 3px solid rgb(76, 9, 139);
 }
 
@@ -36,9 +29,11 @@
     width: 35px;
     height: 35px;
     border: none;
-    background: none;
+    font-size: 20px;
     border-radius: 5px;
+    color: #fff;
     cursor: pointer;
+    background: none;
 }
 
 .search__recipes {
@@ -64,11 +59,4 @@
         display: flex;
         flex-wrap: wrap;
     }
-}
-
-.toUp {
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
-    background: #eec60c;
 }

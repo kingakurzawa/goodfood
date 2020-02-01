@@ -7,6 +7,7 @@
     border-radius: 5px;
     box-shadow: 0 5px 20px rgb(71, 71, 71);
     background: $mainColor;
+    color: $firstFontColor;
 }
 
 @media (min-width:360px) {
@@ -32,9 +33,4 @@
 .recipe-img {
     width: 100%;
     border-radius: 5px;
-}
-
-.recipe:hover {
-    width: 400px;
-    height: 600px;
 }

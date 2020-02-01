@@ -16,14 +16,16 @@ class ButtonInfo extends React.Component {
 
   render() {
     return (
-        <>
-      <div className="boxInfo">
-      <button onClick={e => this.toggleBox(e)} >click me</button>
-        <p style={{ display: this.state.display}}>
-          this page can help you find a delicious dishes by ingredients which
-          you have in your kitchen! Let's enter some product in to input
-        </p>
-      </div>
+      <>
+        <div className="boxInfo">
+          <p style={{ display: this.state.display }}>
+            this page can help you find a delicious dishes by ingredients which
+            you have in your kitchen! Let's enter some product in to input
+          </p>
+          <button className="buttonInfo" onClick={e => this.toggleBox(e)} aria-label="click">
+            click!
+          </button>
+        </div>
       </>
     );
   }

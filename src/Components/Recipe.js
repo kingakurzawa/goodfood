@@ -37,6 +37,9 @@ class Recipe extends React.Component {
               </li>
             ))}
           </ul>
+          <a href={this.props.url} rel="noopener noreferrer" target="_blank">
+            show more
+          </a>
         </div>
       </div>
     );

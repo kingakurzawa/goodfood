@@ -1,14 +1,28 @@
-@import "../variables/colors";
-
 .boxInfo {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 120px;
+    position: relative;
+    @include displayRules(flex-end);
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    width: 90%;
+    height: 150px;
+    color: $firstFontColor;
 
-    button {
-        transform: rotate(90deg);
-        height: 20px;
-        font-size: 30px;
+    .buttonInfo {
+        position: absolute;
+        right: 0;
+        transform: rotate(-50deg);
+        font-size: 20px;
+        color: $firstFontColor;
+        border: none;
+        background: none;
+    }
+
+    p {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        display: block;
+        width: 80%;
+        font-size: 16px;
     }
 }
