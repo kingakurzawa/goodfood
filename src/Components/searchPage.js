@@ -26,7 +26,6 @@ const Searcher = () => {
     );
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data.hits);
 
     setTimeout(() => {
       if (data.hits.length >= 2) {
@@ -61,7 +60,7 @@ const Searcher = () => {
             className="search__form-btn"
             aria-label="search"
           >
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </button>
         </form>
         <ButtonInfo />

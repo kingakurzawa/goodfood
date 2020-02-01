@@ -12,7 +12,7 @@ class Recipe extends React.Component {
 
   toggleBox() {
     this.setState({
-      display: this.state.display === "none" ? "block" : "none"
+      display: this.state.display === "none" ? "flex" : "none"
     });
   }
 
@@ -25,11 +25,11 @@ class Recipe extends React.Component {
           alt={this.props.title}
         />
         <h1 className="recipe-title">{this.props.title}</h1>
-        <p className="recipe-paragraph">{this.cal} kcal</p>
         <div
           className="recipe__details"
           style={{ display: this.state.display }}
         >
+          <p className="recipe-paragraph">{this.cal} kcal</p>
           <ul className="recipe__details__list">
             {this.props.ingredients.map(ingredient => (
               <li className="recipe__details__list-item" key={this.props.key}>

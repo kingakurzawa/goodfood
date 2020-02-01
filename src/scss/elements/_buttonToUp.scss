@@ -1,8 +1,17 @@
 .buttonToUp {
     width: 100%;
-    height: 40px;
-    font-size: 16px;
+    height: 4rem;
+    font-size: 1.6rem;
     color: $firstFontColor;
     border: none;
-    background: $mainColor;
+    background: $mainBgColor;
+    &:focus {
+        @include focusStyle($firstFontColor);
+    }
+}
+
+@media (min-width:760px) {
+    .buttonToUp {
+        font-size: 2rem;
+    }
 }

@@ -2,27 +2,47 @@
     position: relative;
     @include displayRules(flex-end);
     flex-direction: row-reverse;
-    margin-top: 10px;
+    margin-top: 1rem;
     width: 90%;
-    height: 150px;
+    height: 15rem;
     color: $firstFontColor;
 
     .buttonInfo {
         position: absolute;
         right: 0;
         transform: rotate(-50deg);
-        font-size: 20px;
+        font-size: 2rem;
         color: $firstFontColor;
         border: none;
         background: none;
+
+        &:focus {
+            @include focusStyle($secondFontColor);
+        }
     }
 
     p {
         position: relative;
-        left: 0px;
-        right: 0px;
+        left: 0;
+        right: 0;
         display: block;
         width: 80%;
-        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width:410px) {
+    .boxInfo p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:760px) {
+    .boxInfo {
+        p, .buttonInfo {
+            font-size: 2.5rem;
+        }
+        
     }
 }

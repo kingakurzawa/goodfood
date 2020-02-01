@@ -2,9 +2,13 @@
     height: 100vh;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     width: 100%;
-    background-image: url('../../images/mainPhotoDesktop.jpg');
+    background-image: url('../../images/bgPhoto.jpg');
     background-attachment: fixed;
     background-position: right;
     background-size: cover;
