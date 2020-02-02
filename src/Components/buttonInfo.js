@@ -20,7 +20,7 @@ class ButtonInfo extends React.Component {
         <div className="boxInfo">
           <p style={{ display: this.state.display }}>
             this page can help you find a delicious dishes by ingredients which
-            you have in your kitchen! Let's enter some product in to input
+            you have in your kitchen! Just enter the name of the ingredients on the search bar. 
           </p>
           <button className="buttonInfo" onClick={e => this.toggleBox(e)} aria-label="click">
             click!
