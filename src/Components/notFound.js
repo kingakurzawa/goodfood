@@ -3,10 +3,8 @@ const NotFoundPage = () => {
   return (
     <>
       <div className="error">
-        <div className="error__box">
-          <h1 className="error__box-type">Error 404 </h1>
-        </div>
-        <h2 className="errorText">Ooops! Something went wrong. </h2>
+        <h1 className="error-type">Error 404 </h1>
+        <h2 className="error-text">Ooops! Something went wrong. </h2>
       </div>
     </>
   );

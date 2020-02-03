@@ -59,7 +59,7 @@ const Searcher = () => {
         <form className="search__form" onSubmit={getSearch}>
           <input
             type="text"
-            placeholder="enter ingredients"
+            placeholder="type ingredient or click loupe"
             className="search__form-bar"
             value={search}
             onChange={updateSearch}
@@ -74,7 +74,6 @@ const Searcher = () => {
           </button>
         </form>
         <ButtonInfo />
-
         <div className="search__recipes">
           {recipes.map(recipe => (
             <Recipe
