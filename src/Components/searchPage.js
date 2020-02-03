@@ -26,6 +26,7 @@ const Searcher = () => {
     );
     const data = await response.json();
     setRecipes(data.hits);
+    console.log(data.hits);
 
     setTimeout(() => {
       if (data.hits.length >= 2) {
@@ -33,7 +34,7 @@ const Searcher = () => {
       } else {
         return setDisplay("none");
       }
-    }, 1000);
+    }, 500);
   };
   const updateSearch = e => {
     setSearch(e.target.value);
@@ -43,6 +44,14 @@ const Searcher = () => {
     e.preventDefault();
     setQuery(search);
     setSearch("");
+  };
+
+  const checkValueInSearchBar = e => {
+    if (search === "") {
+      return setQuery("vegetarian");
+    } else {
+      return setQuery(search);
+    }
   };
   return (
     <>
@@ -59,11 +68,13 @@ const Searcher = () => {
             type="submit"
             className="search__form-btn"
             aria-label="search"
+            onClick={checkValueInSearchBar}
           >
             <i className="fas fa-search"></i>
           </button>
         </form>
         <ButtonInfo />
+
         <div className="search__recipes">
           {recipes.map(recipe => (
             <Recipe
