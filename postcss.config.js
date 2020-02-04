@@ -1,3 +1,5 @@
 module.exports = {
-  wtyczki: [wymagają("autoprefixer")]
+  plugins: [
+    require('autoprefixer')
+  ]
 };
