@@ -6,7 +6,8 @@ export default {
         use: [
           { loader: 'style-loader' },
           {
-            loader: 'css-loader', options: {
+            loader: 'css-loader', 
+             options: {
               sourceMap: true, modules: true,
               localIdentName: '[local]_[hash:base64:5]'
             }
@@ -21,7 +22,8 @@ export default {
             }
           },
           {
-            loader: 'sass-loader', options: { sourceMap: true }
+            loader: 'sass-loader', 
+            options: { sourceMap: true }
           }
         ]
       }
