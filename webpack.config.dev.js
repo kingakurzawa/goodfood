@@ -4,27 +4,24 @@ export default {
       {
         test: /\.scss$/,
         use: [
-          { loader: "style-loader" },
+          { loader: 'style-loader' },
           {
-            loader: "css-loader",
-            opcje: {
-              sourceMap: true,
-              moduły: true,
-              localIdentName: "[local] _ [hash: base64: 5]"
+            loader: 'css-loader', options: {
+              sourceMap: true, modules: true,
+              localIdentName: '[local]_[hash:base64:5]'
             }
           },
           {
-            loader: "postcss-loader",
-            opcje: {
+            loader: 'postcss-loader',
+            options: {
               sourceMap: true,
               config: {
-                path: "postcss.config.js"
+                path: 'postcss.config.js'
               }
             }
           },
           {
-            loader: "sass-loader",
-            opcje: { sourceMap: true }
+            loader: 'sass-loader', options: { sourceMap: true }
           }
         ]
       }
