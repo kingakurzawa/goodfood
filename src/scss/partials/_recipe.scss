@@ -8,52 +8,64 @@
     color: $firstFontColor;
     background: $mainBgColor;
 
-    .recipe-title {
+    &__buttonOpenModal {
         width: 100%;
-        margin: auto 0;
-        text-align: center;
+        height: 100%;
+        padding: 5%;
+        border: none;
         font-size: 2.5rem;
+        color: $firstFontColor;
+        background: none;
     }
 
-    .recipe-img {
+    &-img {
         width: 100%;
         border-radius: 0.5rem;
     }
-
-    &__details {
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.8rem;
-    }
-
-    .recipe-paragraph {
-        font-size: 1.6rem;
-        font-weight: bold;
-    }
 }
 
-.recipe__details {
-    a {
+.recipe__modal__details {
+    @include displayRules(center);
+    flex-direction: column;
+    font-size: 1.5rem;
+
+    &-buttonCloseModal {
+        position: sticky;
+        top: 0;
+        align-self: flex-end;
+        padding: 0 1.5rem;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: rgba(158, 153, 153, 1);
+        border: none;
+        background: none;
+    }
+
+    &-calories {
+        font-weight: bolder;
+    }
+
+    &-url {
         padding: 1rem;
+        font-size: 2rem;
         font-weight: bold;
-        color: $firstFontColor;
+        color: $secondFontColor;
+    }
+
+    &__list-item {
+        padding: 0.5rem;
     }
 }
 
-
-@media (min-width:410px) {
+@media (min-width: 410px) {
     .recipe {
         width: 45%;
         max-width: 90%;
         margin: 2rem auto;
     }
-
-    .boxInfo p {
-        font-size: 1.8rem;
-    }
 }
 
-@media (min-width:410px) and (orientation:landscape) {
+@media (min-width: 410px) and (orientation: landscape) {
     .recipe {
         width: 40%;
         max-width: 90%;
@@ -61,15 +73,49 @@
     }
 }
 
-@media (min-width:760px) {
+@media (min-width: 760px) {
     .recipe {
         width: 25%;
         max-width: 90%;
         margin: 2rem;
     }
+
+    .recipe__modal__details {
+        font-size: 2rem;
+
+        &-buttonCloseModal {
+            padding-left: 2rem;
+            font-size: 3rem;
+        }
+
+        &-url {
+            padding: 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        &__list-item {
+            padding: 1rem;
+        }
+    }
 }
 
-@media (min-width:1275px) {
+@media (min-width: 1000px) {
+    .recipe__modal__details {
+        font-size: 3rem;
+
+        &-buttonCloseModal {
+            padding-left: 2.5rem;
+            font-size: 3.5rem;
+        }
+
+        &-url {
+            padding: 2rem;
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (min-width: 1275px) {
     .recipe {
         width: 15%;
     }
