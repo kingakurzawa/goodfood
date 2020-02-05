@@ -1,19 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "./header";
 import Searcher from "./searchPage";
 
-
-class HomePage extends Component {
-  state = {
-    isOpen: false
-  };
-  render() {
-    return (
-      <div className="home__box">
-        <Header />
-        <Searcher/>
-      </div>
-    );
-  }
-}
+const HomePage = () => {
+  return (
+    <div className="home__box">
+      <Header />
+      <Searcher />
+    </div>
+  );
+};
 export default HomePage;

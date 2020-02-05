@@ -15,7 +15,7 @@ const customStyles = {
   }
 };
 
-function Recipe(props) {
+const Recipe = props => {
   const cal = Math.floor(props.calories) / 5;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
@@ -65,6 +65,6 @@ function Recipe(props) {
       </Modal>
     </div>
   );
-}
+};
 
 export default Recipe;
