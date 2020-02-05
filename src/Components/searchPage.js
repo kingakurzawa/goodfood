@@ -26,7 +26,6 @@ const Searcher = () => {
     );
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data.hits);
 
     setTimeout(() => {
       if (data.hits.length >= 2) {

@@ -8,8 +8,7 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    width: "80%",
-    height: "70%",
+    height: "60%",
     padding: "1rem",
     transform: "translate(-50%, -50%)"
   }

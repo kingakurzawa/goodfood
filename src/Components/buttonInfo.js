@@ -1,34 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
-class ButtonInfo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      display: "none"
-    };
-  }
+const ButtonInfo = () => {
+  const [displayFormat, setDisplay] = useState("none");
 
-  toggleBox() {
-    this.setState({
-      display: this.state.display === "none" ? "block" : "none"
-    });
-  }
+  const changeDisplay = () => {
+    if (displayFormat === "none") {
+      return setDisplay("block");
+    } else {
+      return setDisplay("none");
+    }
+  };
 
-  render() {
-    return (
-      <>
-        <div className="boxInfo">
-          <p style={{ display: this.state.display }}>
-            this page can help you find a delicious dishes by ingredients which
-            you have in your kitchen! Just enter the name of the ingredients on the search bar. 
-          </p>
-          <button className="buttonInfo" onClick={e => this.toggleBox(e)} aria-label="click">
-            click!
-          </button>
-        </div>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <div className="boxInfo">
+        <p style={{ display: displayFormat }}>
+          this page can help you find a delicious dishes by ingredients which
+          you have in your kitchen! Just enter the name of the ingredients on
+          the search bar.
+        </p>
+        <button
+          className="buttonInfo"
+          onClick={changeDisplay}
+          aria-label="click"
+        >
+          click!
+        </button>
+      </div>
+    </>
+  );
+};
 
 export default ButtonInfo;
