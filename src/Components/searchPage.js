@@ -8,7 +8,7 @@ const Searcher = () => {
   const APP_KEY = "7c0c4172dfdd444e9a1822e1f76a2401";
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("oil");
   const [displayFormat, setDisplay] = useState("none");
 
   useEffect(() => {

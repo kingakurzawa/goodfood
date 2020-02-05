@@ -14,7 +14,7 @@ class App extends Component {
             <Route component={NotFoundPage} />
           </Switch>
         </HashRouter>
-        <Lines color="#fff " background="blur" time={1500} />
+        <Lines color="#fff " background="blur" time={1000} />
       </>
     );
   }
