@@ -38,6 +38,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 @media (min-width:410px) and (orientation:landscape) {
@@ -57,12 +58,13 @@
 
 @media (min-width:1000px) {
     .search__form {
+        justify-content: center;
         width: 95%;
     }
     
     .search__form-bar {
         border:inset;
-        width: 35%;
+        width: 50%;
     }
 
     .search__form-btn {
