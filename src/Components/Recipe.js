@@ -9,6 +9,7 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     height: "60%",
+    width: "80%",
     padding: "1rem",
     transform: "translate(-50%, -50%)"
   }
@@ -35,6 +36,7 @@ const Recipe = props => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
+        ariaHideApp = {false}
         contentLabel="Example Modal"
       >
         <div className="recipe__modal__details">
@@ -46,8 +48,8 @@ const Recipe = props => {
           </button>
           <p className="recipe__modal__details-calories">{cal} kcal</p>
           <ul className="recipe__modal__details__list">
-            {props.ingredients.map(ingredient => (
-              <li className="recipe__modal__details__list-item" key={props.key}>
+            {props.ingredients.map((ingredient, id)=> (
+              <li className="recipe__modal__details__list-item" key={id}>
                 {ingredient.text}
               </li>
             ))}

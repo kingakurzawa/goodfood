@@ -22,6 +22,7 @@
 .search__form-bar:focus,
 .search__form-btn:focus {
     @include focusStyle($secondFontColor);
+    outline: none;
 }
 
 .search__form-btn {
@@ -50,7 +51,9 @@
 
 
 @media (min-width:760px) {
-    .search__form-bar, .search__form-btn  {
+
+    .search__form-bar,
+    .search__form-btn {
         font-size: 2.5rem;
     }
 }
@@ -61,13 +64,15 @@
         justify-content: center;
         width: 95%;
     }
-    
+
     .search__form-bar {
-        border:inset;
+        font-size: 3rem;
+        border: inset;
         width: 50%;
     }
 
     .search__form-btn {
+        font-size: 3rem;
         color: $secondFontColor;
     }
 }

@@ -74,9 +74,9 @@ const Searcher = () => {
         </form>
         <ButtonInfo />
         <div className="search__recipes">
-          {recipes.map(recipe => (
+          {recipes.map((recipe,id) => (
             <Recipe
-              key={recipe.recipe.label}
+              key={id}
               calories={recipe.recipe.calories}
               title={recipe.recipe.label}
               image={recipe.recipe.image}
