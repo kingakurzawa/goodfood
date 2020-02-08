@@ -4,7 +4,9 @@
     font-size: 1.6rem;
     color: $firstFontColor;
     border: none;
+    cursor: pointer;
     background: $mainBgColor;
+
     &:focus {
         @include focusStyle($firstFontColor);
         outline: none;
