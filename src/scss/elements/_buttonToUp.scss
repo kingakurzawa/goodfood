@@ -8,7 +8,7 @@
     background: $mainBgColor;
 
     &:focus {
-        @include focusStyle($firstFontColor);
+        color: rgb(128, 126, 126);
         outline: none;
     }
 }

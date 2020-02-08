@@ -19,7 +19,7 @@
         animation: buttonPulse 2.5s infinite;
 
         &:focus {
-            @include focusStyle($secondFontColor);
+            border: 0.1rem solid $secondFontColor;
         }
     }
 

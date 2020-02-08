@@ -33,7 +33,7 @@ const Searcher = () => {
       } else {
         return setDisplay("none");
       }
-    }, 500);
+    });
   };
   const updateSearch = e => {
     setSearch(e.target.value);
@@ -74,7 +74,7 @@ const Searcher = () => {
         </form>
         <ButtonInfo />
         <div className="search__recipes">
-          {recipes.map((recipe,id) => (
+          {recipes.map((recipe, id) => (
             <Recipe
               key={id}
               calories={recipe.recipe.calories}

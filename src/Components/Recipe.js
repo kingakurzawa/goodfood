@@ -10,7 +10,6 @@ const customStyles = {
     bottom: "auto",
     height: "60%",
     width: "80%",
-    cursor: "pointer",
     padding: "1rem",
     transform: "translate(-50%, -50%)"
   }
