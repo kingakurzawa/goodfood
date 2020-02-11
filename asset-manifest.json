@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goodfood/static/css/main.512ed8fa.chunk.css",
-    "main.js": "/goodfood/static/js/main.5e776486.chunk.js",
-    "main.js.map": "/goodfood/static/js/main.5e776486.chunk.js.map",
+    "main.css": "/goodfood/static/css/main.adfbb22f.chunk.css",
+    "main.js": "/goodfood/static/js/main.412e1907.chunk.js",
+    "main.js.map": "/goodfood/static/js/main.412e1907.chunk.js.map",
     "runtime-main.js": "/goodfood/static/js/runtime-main.2f16859c.js",
     "runtime-main.js.map": "/goodfood/static/js/runtime-main.2f16859c.js.map",
     "static/js/2.5ddade78.chunk.js": "/goodfood/static/js/2.5ddade78.chunk.js",
     "static/js/2.5ddade78.chunk.js.map": "/goodfood/static/js/2.5ddade78.chunk.js.map",
     "index.html": "/goodfood/index.html",
-    "precache-manifest.bc0dc31a5a18b751aba6301ed0332ef8.js": "/goodfood/precache-manifest.bc0dc31a5a18b751aba6301ed0332ef8.js",
+    "precache-manifest.2640b819d00597e7859322a822faa97b.js": "/goodfood/precache-manifest.2640b819d00597e7859322a822faa97b.js",
     "service-worker.js": "/goodfood/service-worker.js",
-    "static/css/main.512ed8fa.chunk.css.map": "/goodfood/static/css/main.512ed8fa.chunk.css.map",
+    "static/css/main.adfbb22f.chunk.css.map": "/goodfood/static/css/main.adfbb22f.chunk.css.map",
     "static/js/2.5ddade78.chunk.js.LICENSE": "/goodfood/static/js/2.5ddade78.chunk.js.LICENSE",
     "static/media/main.scss": "/goodfood/static/media/eggs.0ceb22c5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2f16859c.js",
     "static/js/2.5ddade78.chunk.js",
-    "static/css/main.512ed8fa.chunk.css",
-    "static/js/main.5e776486.chunk.js"
+    "static/css/main.adfbb22f.chunk.css",
+    "static/js/main.412e1907.chunk.js"
   ]
 }
