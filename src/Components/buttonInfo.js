@@ -15,7 +15,7 @@ const ButtonInfo = () => {
     <>
       <div className="boxInfo">
         <p style={{ display: displayFormat }}>
-          this page can help you find a delicious dishes by ingredients which
+          this page can help you find delicious dishes by ingredients which
           you have in your kitchen! Just enter the name of the ingredients on
           the search bar.
         </p>
