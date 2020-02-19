@@ -1,6 +1,6 @@
 {
   "homepage": "https://kingakurzawa.github.io/goodfood/",
-  "name": "my-app",
+  "name": "goodfood searcher",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
